@@ -26,7 +26,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?=$Wcms->page('title')?> - <?=$Wcms->get('config','siteTitle')?></title>
+<title><?= $Wcms->page('title') ?> - <?= $Wcms->get('config', 'siteTitle') ?></title>
 <meta name="description" content="<?=$Wcms->page('description')?>">
 <meta name="keywords" content="<?=$Wcms->page('keywords')?>">
 <link rel="shortcut icon" href="/data/files/favicon.png">
