@@ -2,7 +2,7 @@
 global $Wcms;
 $page_image = $Wcms->asset('images/default.jpg');
 $heading = $Wcms->page('title');
-$height = 100;
+$height = 50;
 $subtitle = "";
 $type = "";
 $readMore = "";
@@ -21,7 +21,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +34,7 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
 <?= $Wcms->css() ?>
  
-<link rel="stylesheet" href="<?= $Wcms->asset('css/style.css') ?>?v10">
+<link rel="stylesheet" href="<?= $Wcms->asset('css/style.css') ?>?v12">
 
 <script>var page=<?=json_encode($Wcms->currentPage)?>,heading=<?=json_encode($heading)?>,subtitle=<?=json_encode($subtitle)?>,image=<?=json_encode($page_image)?>,height=<?=json_encode($height)?>,type=<?=json_encode($type)?>,loggedIn=<?=json_encode($Wcms->loggedIn)?>;</script>
 <style>.parallax{height:<?=htmlentities($height)?>vh;}</style>
@@ -71,17 +71,17 @@ if($Wcms->currentPage == $Wcms->get('config', 'login')) {
 </header>
 <?php endif; ?>
 <?php if($Wcms->currentPage != $Wcms->get('config', 'login')): ?>
-<div class="container" id="content"><div class="row"><div class="col-lg-12 text-center padding40">
+<div class="container" id="content"><div class="row"><div class="col-lg-12 text-left padding40">
 <?=$Wcms->page('content')?>
 </div></div></div>
 <div class="container-fluid CTA">
-<div class="text-center padding40">
+<div class="text-left padding40">
 <?=$Wcms->block('subside')?>
 </div></div>
 <?php else: ?>
 <style>.parallax .scrolly { display: none }</style>
 <?php endif; ?>
-<footer class="container-fluid"><div class="text-center padding20">
+<footer class="container-fluid"><div class="text-left padding20">
 <br><br>
 <?=$Wcms->footer()?>
 <br><br><br>
