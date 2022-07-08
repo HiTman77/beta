@@ -76,4 +76,39 @@ from{top:-300px;opacity:0}
 to{top:0;opacity:1}
 }
 
-.green{background-color:#2ecc71;padding:10px 25px;transition:all .3s ease;position:relative;display:inline-block}.green:hover{background-color:#00000}.rounded h2{background:linear-gradient(to bottom,#cfc09f 22%,#c5c0b9 24%,#cfc09f 26%,#cfc09f 27%,#ffecb3 40%,#bf8715 78%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:#fff;position:relative;text-transform:uppercase;font-size:1.8vw;margin:0;font-weight:200}.rounded a,a:hover{color:#fff}.rounded li{font-size:x-small}.glow{font-size:30px;color:#fff;text-align:center;animation:glow 1s ease-in-out infinite alternate}@-webkit-keyframes glow{from{text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #e60073,0 0 40px #e60073,0 0 50px #e60073,0 0 60px #e60073,0 0 70px #e60073}to{text-shadow:0 0 20px #fff,0 0 30px #ff4da6,0 0 40px #ff4da6,0 0 50px #ff4da6,0 0 60px #ff4da6,0 0 70px #ff4da6,0 0 80px #ff4da6}}.btn-15{border:2px solid #000;z-index:1}.btn-15:after{position:absolute;content:"";width:0;height:100%;top:0;left:0;direction:rtl;z-index:-1;background:#000;transition:all .3s ease}.btn-15:hover{color:#fff}.btn-15:hover:after{left:auto;right:0;width:100%}.btn-15:active{top:2px}.link{text-decoration:bold;color:#00000;transition:.3s;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s}.table-success,.table-success>td,.table-success>th{background-color:#673ab745}
+.card-custom{overflow:hidden;min-height:450px;border:0;box-shadow:0 0 15px rgba(10,10,10,0.3)}
+.card-custom-img{height:200px;min-height:200px;background-repeat:no-repeat;background-size:cover;background-position:center;border-color:inherit}
+.card-custom-img::after{position:absolute;content:'';top:161px;left:0;width:0;height:0;border-style:solid;border-left-width:calc(575px - 5vw);border-color:transparent transparent transparent inherit;border-width:40px 0 0 545px}
+.card-custom-avatar img{border-radius:50%;box-shadow:0 0 15px #9b169aba;position:absolute;top:100px;left:1.25rem;width:120px;height:120px;background-color:#591762d6}
+.card-text:last-child{margin-bottom:0;color:#000}
+.glow-on-hover{width:100%;height:50px;border:none;outline:none;color:#fff;background:#111;cursor:pointer;position:relative;z-index:0;border-radius:10px}
+.glow-on-hover:before{content:'';background:linear-gradient(45deg,red,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#7a00ff,#ff00c8,red);position:absolute;top:-2px;left:-2px;background-size:400%;z-index:-1;filter:blur(5px);width:calc(100% + 4px);height:calc(100% + 4px);animation:glowing 20s linear infinite;opacity:0;transition:opacity .3s ease-in-out;border-radius:10px}
+.glow-on-hover:active{color:#000}
+.glow-on-hover:active:after{background:transparent}
+.glow-on-hover:hover:before{opacity:1}
+.glow-on-hover:after{z-index:-1;content:'';position:absolute;width:100%;height:100%;background:#111;left:0;top:0;border-radius:10px}
+@keyframes glowing {
+0%{background-position:0 0}
+50%{background-position:400% 0}
+100%{background-position:0 0}
+}
+.green{background-color:#2ecc71;padding:10px 25px;transition:all .3s ease;position:relative;display:inline-block}
+.green:hover{background-color:#00000}
+.rounded h2{background:linear-gradient(to bottom,#cfc09f 22%,#c5c0b9 24%,#cfc09f 26%,#cfc09f 27%,#ffecb3 40%,#bf8715 78%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:#fff;position:relative;text-transform:uppercase;font-size:1.5vw;margin:0;font-weight:900;text-align:center}
+.rounded a,a:hover{color:#213d7a}
+.rounded li{font-size:small;color:#121826}
+.checked-casino{list-style:url(/casinos/img/checked.svg)}
+.rounded p{font-size:small;color:#121826}
+.rounded b{color:#272954;font-weight:700}
+.glow{font-size:20px;color:#fff;text-align:center;animation:glow 1s ease-in-out infinite alternate}
+@-webkit-keyframes glow {
+from{text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #0cf098,0 0 40px #0c89f0,0 0 50px #18ed51,0 0 60px #0e12ed,0 0 70px #b9ed0c}
+to{text-shadow:0 0 20px #fff,0 0 30px #ff4da6,0 0 40px #ff4da6,0 0 50px #ff4da6,0 0 60px #ff4da6,0 0 70px #ff4da6,0 0 80px #ff4da6}
+}
+.btn-15{border:2px solid #000;z-index:1}
+.btn-15:after{position:absolute;content:"";width:0;height:100%;top:0;left:0;direction:rtl;z-index:-1;background:#000;transition:all .3s ease}
+.btn-15:hover{color:#fff}
+.btn-15:hover:after{left:auto;right:0;width:100%}
+.btn-15:active{top:2px}
+.link{text-decoration:bold;color:#00000;transition:.3s;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s}
+.table-success,.table-success>td,.table-success>th{background-color:#673ab745}
